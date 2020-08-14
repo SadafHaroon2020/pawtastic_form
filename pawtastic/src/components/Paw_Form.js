@@ -4,7 +4,7 @@ class Paw_Form extends React.Component {
   constructor(props){
     super(props);
     this.state={
-  
+  //Defining states
       isSubmitted : false,
       userName: '',
       breed: '',
@@ -18,7 +18,7 @@ class Paw_Form extends React.Component {
 }
   handleChange(event){
     this.setState({
-          
+      //settng up states with current values
       [event.target.id]: event.target.value
   })
       
@@ -26,6 +26,7 @@ class Paw_Form extends React.Component {
   }
 
   handleSubmit(event){
+    //Alerting on Submit
     alert('Thank you form has submitted')
     this.setState({
       isSubmitted: true
@@ -47,7 +48,7 @@ render(){
             <input type="submit"/>
             <br/><br/>
             <label>Breed : 
-              <input id="breed" className="field" style={{marginTop:'10px'}} type="text" placeholder="Pet's Breed" value={this.state.breed} onChange={this.handleChange}/>
+              <input id="breed" className="field"  type="text" placeholder="Pet's Breed" value={this.state.breed} onChange={this.handleChange}/>
             </label>
             <label > Birthday :
                 <input id="age" className="field" type="text" placeholder="MM/DD/YY" value={this.state.age} onChange={this.handleChange}/>
@@ -70,6 +71,7 @@ render(){
              Weight  : 
              <input id ="weight" className="field" type="checkbox" type="text" placeholder="lbs" value={this.state.weight} onChange={this.handleChange}/>
             </label>
+            {/* Defining Buttons moving from footer  */}
             <div className= "bottomButton">
         <div className="btn1"> <button id="b_button">Back</button></div>
            <div className="btn2"> <button id="b_button">Next</button></div>
