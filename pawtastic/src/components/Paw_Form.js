@@ -5,11 +5,13 @@ class Paw_Form extends React.Component {
     render() { 
         return ( 
             <form>
-            <h1></h1>
-            <p>Name:</p>
-            <input
-              type="text"
-            />
+            <label> Name :<br/>  
+            <input style={{marginTop:'10px'}} type="text" value='name' onChange='' placeholder="Pet's Name"/>
+            </label>
+            <br/><br/>
+            <label>Breed :<br/>
+            <input style={{marginTop:'10px'}} type="text" placeholder="Pet's Breed" value='' onChange=''/>
+            </label>
           </form>
          );
     }
