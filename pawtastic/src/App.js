@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import Paw_Form from './Components/Paw_Form';
+import Footer from './Components/Footer'
 
 
 class App extends React.Component {
@@ -18,9 +19,9 @@ class App extends React.Component {
           <Header />
           <Paw_Form />
         </div>
-        {/* <div className="div3" >
+        <div className="div3" >
           <Footer />
-        </div> */}
+        </div>
       </div>
     </div>
     </React.Fragment>
