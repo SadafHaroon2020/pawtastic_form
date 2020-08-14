@@ -16,6 +16,17 @@ class Paw_Form extends React.Component {
             <input type="text" placeholder="MM/DD/YY" value='' onChange=''/>
             <br></br>
             </label>
+            <br/>
+             Gender :
+            <label for= "toggle" class= "switch">  
+            <input type="checkbox" id="toggle" class="checkbox"/>
+            </label>
+            <br/>
+            Spayed or Neutered :
+            <label for= "toggle" class= "switch2">
+            <br/>
+            <input type="checkbox" id="toggle" class="checkbox"/>
+            </label>
           </form>
          );
     }
