@@ -35,5 +35,55 @@ list-style: none;
   display:flex;
   flex:1;
   justify-content: space-evenly;
+  }
+  body{
+    background-color:#9497A7;
+    padding: 100px;
+    margin:0 auto;
+    align-content: center;
+ 
+  }
   
-}
+  .App {
+    border: 2px solid #9497A7;
+    border-radius: 15px;
+    padding: 0px;
+    margin: 0 auto;
+    align-content: center;
+  }
+  
+  .App > div{
+    padding: 1em; 
+  }
+  
+  .App{
+    display: grid;
+    grid-template-columns: 400px 390px 200px;
+    grid-template-rows: 120px 370px 100px ;
+    height: 670px;
+    width:1000px;
+    grid-gap:0px;
+    grid-template-areas: 
+    "a b b"
+    "a b b "
+    "a c c"
+    ;
+   
+  }
+  .div1 {
+    grid-area: a;
+    background-color: #545871;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    Color: whitesmoke;
+  }
+  .div2 {
+    grid-area: b;
+    background-color: #E9D8DA;
+    border-top-right-radius: 10px;
+  }
+  .div3 {
+    grid-area: c;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+  }
