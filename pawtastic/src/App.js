@@ -1,15 +1,30 @@
 import React from 'react';
-import Paw_Form from './components/Paw_Form'
 import './App.css';
+import Header from './Components/Header';
+import Sidebar from './Components/Sidebar';
+import Paw_Form from './Components/Paw_Form';
 
-class App extends React.Component{
- render(){
+
+class App extends React.Component {
+  render(){
   return (
-    <div className="App">
-     <Paw_Form/>
+    <React.Fragment>
+    <div className="wrapper">
+      <div className="App">
+        <div className="div1">
+          <Sidebar />
+        </div>
+        <div className="div2">
+          <Header />
+          <Paw_Form />
+        </div>
+        {/* <div className="div3" >
+          <Footer />
+        </div> */}
+      </div>
     </div>
+    </React.Fragment>
   );
 }
 }
-
 export default App;
