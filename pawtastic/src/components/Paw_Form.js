@@ -1,10 +1,16 @@
 import React from './node_modules/react';
 
 class Paw_Form extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = this.state = { pawName: '' };
-    }
+  constructor(props){
+    super(props);
+    this.state =
+    {
+        value: '',
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit=this.handleSubmit.bind(this);
+}
     render() { 
         return ( 
             <form>
