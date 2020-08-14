@@ -12,6 +12,10 @@ class Paw_Form extends React.Component {
             <label>Breed :<br/>
             <input style={{marginTop:'10px'}} type="text" placeholder="Pet's Breed" value='' onChange=''/>
             </label>
+            <label style={{marginLeft:'20px'}} >Birthday :
+            <input type="text" placeholder="MM/DD/YY" value='' onChange=''/>
+            <br></br>
+            </label>
           </form>
          );
     }
