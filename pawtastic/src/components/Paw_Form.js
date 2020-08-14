@@ -27,9 +27,9 @@ class Paw_Form extends React.Component {
 
   handleSubmit(event){
     alert('Thank you form has submitted')
-    // this.setState({
-    //   isSubmitted: true
-    // });
+    this.setState({
+      isSubmitted: true
+    });
     
       event.preventDefault();
   }
