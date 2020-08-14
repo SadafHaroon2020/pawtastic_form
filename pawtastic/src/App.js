@@ -19,9 +19,9 @@ class App extends React.Component {
           <Header />
           <Paw_Form />
         </div>
-        <div className="div3" >
+        {/* <div className="div3" >
           <Footer />
-        </div>
+        </div> */}
       </div>
     </div>
     </React.Fragment>
