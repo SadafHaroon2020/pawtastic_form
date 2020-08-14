@@ -27,6 +27,12 @@ class Paw_Form extends React.Component {
             <br/>
             <input type="checkbox" id="toggle" class="checkbox"/>
             </label>
+            <br/>
+                 <label>
+                     <br/>
+                  Weight  : 
+                  <input type="text" placeholder="lbs" value='' onChange=''/>
+                 </label>
           </form>
          );
     }
